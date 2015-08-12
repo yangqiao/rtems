@@ -37,8 +37,9 @@
 
 MEMORY {
         VECTOR_RAM     (AIW) : ORIGIN = 0x0       , LENGTH = 0x8000
-        RAM            (AIW) : ORIGIN = 0x00008000, LENGTH = 128M - 48K
-	RAM_MMU        (AIW) : ORIGIN = 128M - 16k, LENGTH = 16k
+        GPU_RAM        (AIW) : ORIGIN = 256M - 64M, LENGTH = 64M
+        RAM            (AIW) : ORIGIN = 0x00008000, LENGTH = 256M - 64M - 48K
+	RAM_MMU        (AIW) : ORIGIN = 256M - 64M - 16k, LENGTH = 16k
 }
 
 REGION_ALIAS ("REGION_START", RAM);
