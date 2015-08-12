@@ -40,6 +40,9 @@ extern "C" {
 #define BSP_GPIO_PINS_PER_BANK 32
 #define BSP_GPIO_PINS_PER_SELECT_BANK 10
 
+#define BSP_CONSOLE_UART0   0
+#define BSP_CONSOLE_FB      1
+
 void rpi_init_cmdline(void);
 const char* rpi_cmdline(void);
 const char* rpi_cmdline_arg(const char* arg);

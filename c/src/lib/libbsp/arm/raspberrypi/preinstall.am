@@ -142,6 +142,10 @@ $(PROJECT_INCLUDE)/bsp/vc.h: include/vc.h $(PROJECT_INCLUDE)/bsp/$(dirstamp)
 	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/bsp/vc.h
 PREINSTALL_FILES += $(PROJECT_INCLUDE)/bsp/vc.h
 
+$(PROJECT_INCLUDE)/bsp/fbcons.h: console/fbcons.h $(PROJECT_INCLUDE)/bsp/$(dirstamp)
+	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/bsp/fbcons.h
+PREINSTALL_FILES += $(PROJECT_INCLUDE)/bsp/fbcons.h
+
 $(PROJECT_INCLUDE)/libcpu/cache_.h: ../../../libcpu/arm/shared/include/cache_.h $(PROJECT_INCLUDE)/libcpu/$(dirstamp)
 	$(INSTALL_DATA) $< $(PROJECT_INCLUDE)/libcpu/cache_.h
 PREINSTALL_FILES += $(PROJECT_INCLUDE)/libcpu/cache_.h
