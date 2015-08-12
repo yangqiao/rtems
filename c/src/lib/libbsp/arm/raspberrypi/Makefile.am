@@ -46,6 +46,7 @@ include_bsp_HEADERS += include/usart.h
 include_bsp_HEADERS += include/raspberrypi.h
 include_bsp_HEADERS += include/rpi-gpio.h
 include_bsp_HEADERS += include/mailbox.h
+include_bsp_HEADERS += include/vc.h
 
 include_libcpu_HEADERS = ../../../libcpu/arm/shared/include/cache_.h \
     ../../../libcpu/arm/shared/include/arm-cp15.h
@@ -131,6 +132,9 @@ libbsp_a_SOURCES += gpio/rpi-gpio.c
 
 # Mailbox
 libbsp_a_SOURCES += misc/mailbox.c
+
+# VideoCore
+libbsp_a_SOURCES += misc/vc.c
 
 # Cache
 libbsp_a_SOURCES += ../../../libcpu/shared/src/cache_manager.c
