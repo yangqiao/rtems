@@ -44,6 +44,9 @@ void rpi_init_cmdline(void);
 const char* rpi_cmdline(void);
 const char* rpi_cmdline_arg(const char* arg);
 
+void    _RPI_initVideo(void);
+void    _RPI_outch    (char);
+
 #ifdef __cplusplus
 }
 #endif /* __cplusplus */
