@@ -47,6 +47,7 @@ include_bsp_HEADERS += include/raspberrypi.h
 include_bsp_HEADERS += include/rpi-gpio.h
 include_bsp_HEADERS += include/mailbox.h
 include_bsp_HEADERS += include/vc.h
+include_bsp_HEADERS += console/fbcons.h
 
 include_libcpu_HEADERS = ../../../libcpu/arm/shared/include/cache_.h \
     ../../../libcpu/arm/shared/include/arm-cp15.h
@@ -111,11 +112,12 @@ libbsp_a_SOURCES += irq/irq.c
 libbsp_a_SOURCES += ../../shared/console.c
 libbsp_a_SOURCES += ../../shared/console_control.c
 libbsp_a_SOURCES += ../../shared/console_read.c
-libbsp_a_SOURCES += ../../shared/console_select.c
 libbsp_a_SOURCES += ../../shared/console_write.c
 libbsp_a_SOURCES += console/console-config.c
+libbsp_a_SOURCES += console/console_select.c
 libbsp_a_SOURCES += console/usart.c
 libbsp_a_SOURCES += console/fb.c
+libbsp_a_SOURCES += console/fbcons.c
 libbsp_a_SOURCES += console/outch.c
 
 # clock
