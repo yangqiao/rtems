@@ -116,6 +116,7 @@ libbsp_a_SOURCES += ../../shared/console_write.c
 libbsp_a_SOURCES += console/console-config.c
 libbsp_a_SOURCES += console/usart.c
 libbsp_a_SOURCES += console/fb.c
+libbsp_a_SOURCES += console/outch.c
 
 # clock
 libbsp_a_SOURCES += clock/clockdrv.c ../../../shared/clockdrv_shell.h

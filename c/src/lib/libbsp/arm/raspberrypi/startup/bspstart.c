@@ -7,6 +7,7 @@
  */
 
 /*
+ * Copyright (c) 2015 Yang Qiao
  * Copyright (c) 2013 by Alan Cudmore
  *
  *  The license and distribution terms for this file may be
@@ -27,4 +28,5 @@ void bsp_start(void)
 {
     bsp_interrupt_initialize();
     rpi_init_cmdline();
+    _RPI_initVideo();
 }
