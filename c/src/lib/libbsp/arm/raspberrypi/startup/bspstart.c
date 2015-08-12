@@ -26,4 +26,5 @@
 void bsp_start(void)
 {
     bsp_interrupt_initialize();
+    rpi_init_cmdline();
 }
