@@ -79,7 +79,6 @@ libbsp_a_LIBADD =
 # Shared
 libbsp_a_SOURCES += ../../shared/bootcard.c
 libbsp_a_SOURCES += ../../shared/bspclean.c
-libbsp_a_SOURCES += ../../shared/bspgetworkarea.c
 libbsp_a_SOURCES += ../../shared/bsplibc.c
 libbsp_a_SOURCES += ../../shared/bsppost.c
 libbsp_a_SOURCES += ../../shared/bsppredriverhook.c
@@ -97,6 +96,7 @@ libbsp_a_SOURCES += ../shared/arm-cp15-set-ttb-entries.c
 libbsp_a_SOURCES += ../../shared/bspreset_loop.c
 libbsp_a_SOURCES += startup/bspstart.c
 libbsp_a_SOURCES += startup/cmdline.c
+libbsp_a_SOURCES += startup/bspgetworkarea.c
 
 # IRQ
 libbsp_a_SOURCES += ../shared/arm-cp15-set-exception-handler.c
@@ -115,6 +115,7 @@ libbsp_a_SOURCES += ../../shared/console_select.c
 libbsp_a_SOURCES += ../../shared/console_write.c
 libbsp_a_SOURCES += console/console-config.c
 libbsp_a_SOURCES += console/usart.c
+libbsp_a_SOURCES += console/fb.c
 
 # clock
 libbsp_a_SOURCES += clock/clockdrv.c ../../../shared/clockdrv_shell.h
@@ -147,7 +148,7 @@ libbsp_a_SOURCES += startup/bspstarthooks.c
 
 # LIBMM
 libbsp_a_SOURCES += startup/mm_config_table.c
-libbsp_a_SOURCES += ../shared/mminit.c
+libbsp_a_SOURCES += startup/mminit.c
 
 ###############################################################################
 # Network                                                    #
